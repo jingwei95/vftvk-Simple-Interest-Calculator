@@ -6,7 +6,7 @@ function compute()
     let years = document.getElementById("years").value;
     let interest = principal * years * rate / 100;
     console.log(typeof(years));
-    let actual_year = years + 2021;
+    let actual_year = parseInt(years) + 2021;
     document.getElementById("result").innerHTML =  "If you deposit <mark>" + principal + "</mark>,<br />" +
         "at an interest rate of <mark>" + rate + "</mark>.<br />" +
         "You will receive an amount of <mark>" + interest + "</mark>,<br />" +
